@@ -1,0 +1,16 @@
+{
+    "name": "elena/kidkinder-1.0.0",
+    "description": "website of the child development center",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Elena Dreganova",
+            "email": "elenadreganova1982@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "phpmailer/phpmailer": "^6.9"
+    }
+}
