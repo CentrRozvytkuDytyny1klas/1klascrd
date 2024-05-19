@@ -33,7 +33,7 @@
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/style.css" rel="stylesheet" />
 
-    <!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script> -->
+   
   </head>
 
   <body>
@@ -132,7 +132,7 @@
           <div class="col-lg-7 mb-5">
             <div class="contact-form">
               <div id="success"></div>
-              <form name="sentMessage" id="contactForm" novalidate="novalidate" method="post" action="send_email.php"> 
+              <form name="sentMessage" id="contactForm" novalidate="novalidate" method="POST" action="send_email.php"> 
                 <div class="control-group">
                   <input
                     type="text"
@@ -148,7 +148,7 @@
                   <input
                     type="email"
                     class="form-control"
-                    id="email"
+                   id="email"
                     placeholder="Ваша електронна пошта"
                     required="required"
                     data-validation-required-message="Будь ласка введіть Вашу електронну пошту"
@@ -347,7 +347,7 @@
     ></a>
 
     <!-- JavaScript Libraries -->
-
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
     <script src="lib/easing/easing.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
@@ -361,7 +361,7 @@
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/validate/1.19.3/jquery.validate.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/validate/1.19.3/jquery.validate.min.js"></script>
     <script>
         $(document).ready(function () {
             $("#contactForm").validate({
@@ -406,6 +406,6 @@
                 }
             });
         });
-    </script>
+    </script> -->
   </body>
 </html>

@@ -34,7 +34,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->Username = 'elenadreganova1982@gmail.com'; // Ваш email
         $mail->Password = '357Elena159Elena'; // Ваш пароль
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
-        $mail->Port = 587;
+        $mail->Port = 578;
 
         // От кого
         $mail->setFrom($email, $name);
