@@ -39,7 +39,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // От кого
         $mail->setFrom($email, $name);
         // Кому
-        $mail->addAddress('recipient@example.com'); // Получатель
+        $mail->addAddress('elenadreganova1982@gmail.com'); // Получатель
 
         // Содержание
         $mail->isHTML(true);

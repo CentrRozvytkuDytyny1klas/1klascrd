@@ -32,6 +32,8 @@
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/style.css" rel="stylesheet" />
+
+    <!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script> -->
   </head>
 
   <body>
@@ -345,7 +347,7 @@
     ></a>
 
     <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
     <script src="lib/easing/easing.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
@@ -354,9 +356,56 @@
 
     <!-- Contact Javascript File -->
     <script src="mail/jqBootstrapValidation.min.js"></script>
-    <script src="mail/contact.js"></script>
+    <!-- <script src="mail/contact.js"></script> -->
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/validate/1.19.3/jquery.validate.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#contactForm").validate({
+                rules: {
+                    name: {
+                        required: true,
+                        minlength: 2
+                    },
+                    email: {
+                        required: true,
+                        email: true
+                    },
+                    subject: {
+                        required: true,
+                        minlength: 2
+                    },
+                    message: {
+                        required: true,
+                        minlength: 5
+                    }
+                },
+                messages: {
+                    name: {
+                        required: "Будь ласка введить Ваше і'мя",
+                        minlength: "Ваше ім'я повинно бути не менше 2 символів"
+                    },
+                    email: {
+                        required: "Будь ласка введіть Вашу електронну пошту",
+                        email: "Будь ласка введіть коректну електронну пошту"
+                    },
+                    subject: {
+                        required: "Будь ласка введіть тему звернення",
+                        minlength: "Тема повинна бути не менше 2 символів"
+                    },
+                    message: {
+                        required: "Будь ласка введіть текст повідомлення",
+                        minlength: "Повідомлення повинно бути не менше 5 символів"
+                    }
+                },
+                submitHandler: function (form) {
+                    form.submit();
+                }
+            });
+        });
+    </script>
   </body>
 </html>
