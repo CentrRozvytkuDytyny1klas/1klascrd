@@ -100,3 +100,33 @@
     
 })(jQuery);
 
+
+// Функция для обновления высоты галереи на основе её содержимого
+function updateGalleryHeight() {
+    const gallery = document.getElementById('gallery');
+    
+    // Получаем общую высоту контента внутри галереи
+    const galleryHeight = gallery.scrollHeight;
+    
+    // Применяем эту высоту к самой галерее
+    gallery.style.height = galleryHeight + 'px';
+}
+
+// Наблюдатель за изменениями в DOM (на случай добавления новых изображений через изменение HTML)
+const observer = new MutationObserver(() => {
+    updateGalleryHeight();
+});
+
+// Настраиваем наблюдатель для отслеживания изменений внутри элемента галереи
+observer.observe(document.getElementById('gallery'), { childList: true });
+
+// Вызов функции при загрузке страницы, чтобы установить начальную высоту
+window.addEventListener('load', updateGalleryHeight);
+
+
+
+
+
+
+
+
