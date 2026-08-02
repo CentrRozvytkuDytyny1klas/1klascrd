@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://centrrozvytkudytyny1klas.github.io/1klascrd/sitemap.xml
